@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Job Tracker",
+  "version": "1.0",
+  "permissions": ["storage", "activeTab", "tabs", "http://localhost:5000/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.linkedin.com/jobs/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
