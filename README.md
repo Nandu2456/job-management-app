@@ -55,30 +55,6 @@ Backend	Node.js, Express.js
 Database	MongoDB
 Extension	Chrome Manifest v3, JavaScript
 Tools	Git, GitHub, Postman
-📁 Project Structure
-job-management-app/
-│
-├── backend/
-│   ├── src/
-│   ├── public/
-│   ├── server.js
-│   ├── package.json
-│   └── ...
-│
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   └── ...
-│
-├── jobextension/
-│   ├── manifest.json
-│   ├── content.js
-│   ├── popup.html
-│   ├── popup.js
-│   └── ...
-│
-└── README.md
 
 🔌 API Endpoints
 POST /api/jobs/add
@@ -153,3 +129,4 @@ Backend & Full-Stack Developer
 GitHub: https://github.com/Nandu2456
 
 LinkedIn: https://www.linkedin.com/in/nandini-gourishetti-79a561239/
+
