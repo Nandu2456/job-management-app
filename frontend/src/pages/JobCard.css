@@ -1,0 +1,88 @@
+.job-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.2s ease;
+  box-shadow: 0 0 10px rgba(106, 13, 173, 0.2);
+}
+
+.job-card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background: linear-gradient(
+    45deg,
+    #cbbfd3,
+    #ddd1e6,
+    #e0d8e6
+  );
+  border-radius: 12px;
+}
+
+.job-card:hover {
+  transform: translateY(-3px);
+}
+
+.job-card:hover::before {
+  filter: brightness(4.0);
+}
+
+.job-card h3 {
+  margin-top: 0;
+  color: #6A0DAD;
+}
+
+.job-card p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.job-card a {
+  color: #6A0DAD;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.job-card a:hover {
+  text-decoration: underline;
+}
+
+.card-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.reminder-btn {
+  background-color: #6A0DAD;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reminder-btn:hover {
+  background-color: #530a8c;
+}
